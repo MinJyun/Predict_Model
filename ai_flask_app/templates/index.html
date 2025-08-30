@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Demo</title>
+</head>
+<body>
+    <h1>模型預測</h1>
+    <form method="post">
+        <label>輸入數字：</label>
+        <input type="text" name="input_value">
+        <input type="submit" value="預測">
+    </form>
+
+    {% if prediction is not none %}
+        <h2>預測結果：{{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
